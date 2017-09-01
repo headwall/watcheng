@@ -1,0 +1,73 @@
+.sidebar,
+.episode__description,
+.episode__subs,
+w-div,
+.footer,
+.comments-cackle
+{
+	display: none !important;
+}
+
+.player {
+	width: 100% !important;
+	max-width: 860px !important;
+}
+
+.vjs-text-track-display > div > div > div
+{
+	font-size: 35px !important;
+}
+
+.episode__controls
+{
+	width: 100%;
+	/*height: 50px;*/
+	/*background-color: #f00;*/
+	text-align: center;
+}
+
+.episode__controls__next-button, .episode__controls__prev-button
+{
+	display: inline-block;
+	background-color: rgba(0,0,0,.1);
+
+	width: 60px;
+	height: 60px;
+	margin: 15px;
+	cursor: pointer;
+}
+
+.episode__controls__next-button > a, .episode__controls__prev-button > a
+{
+	width: 100%;
+	height: 100%;
+	font-size: 30px;
+	text-decoration: none;
+	color: #000;
+	line-height: 60px;
+}
+
+.navigation {
+	position: relative;
+	min-height: 200px;
+}
+
+.preloader {
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  top: 50px;
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  animation: rotation 0.7s infinite ease-in;
+}
+
+@keyframes rotation {
+  50% {
+  	transform: scale(0.1);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}

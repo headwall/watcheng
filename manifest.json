@@ -1,0 +1,36 @@
+
+{
+	"manifest_version": 2,
+
+	 "name" : "Hide sidebar",
+	 "version" : "1.0",
+
+	 "permissions" : 
+	 	[
+	 		"https://watcheng.com/*",
+	 		"https://google.ru/*",
+	 		"tabs"
+	 	],
+
+	 "browser_action" : {
+	 	"default_title" : "Watcheng",
+	 	"default_popup" : "popup.html"
+	 },
+
+	 "content_scripts" :
+	 [
+	 	{
+	 		"matches" : 
+	 		[
+	 			"https://watcheng.com/ru/show/*",
+	 			"http://watcheng.com/ru/show/*",
+	 			"https://www.google.ru/*",
+	 			"http://www.google.ru/*"
+	 		],
+
+	 		"css" : [ "style.css" ],
+	 		"js" : [ "script.js" ]
+	 	}
+	 ]
+
+}
